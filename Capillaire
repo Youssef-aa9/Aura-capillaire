@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Capillaire</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #fff;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            background-color: #444;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            position: relative;
+        }
+        nav li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        nav li:hover {
+            background-color: #666;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 50px;
+            background-color: #555;
+        }
+        nav li:hover > ul {
+            display: block;
+        }
+        nav ul ul li {
+            width: 200px;
+        }
+        section {
+            padding: 30px;
+        }
+        footer {
+            background-color: #eee;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aura Capillaire</h1>
+    <p><strong>Révélez l’aura naturelle de vos cheveux</strong></p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li>
+            <a href="#ingredients">Ingrédients</a>
+            <ul>
+                <li><a href="#argan">Huile d’argan bio</a></li>
+                <li><a href="#keratine">Kératine végétale</a></li>
+                <li><a href="#aloe">Aloe vera pur</a></li>
+                <li><a href="#vitamine">Vitamine E</a></li>
+                <li><a href="#karite">Beurre de karité</a></li>
+                <li><a href="#camomille">Extrait de camomille</a></li>
+                <li><a href="#proteines">Protéines de soie</a></li>
+            </ul>
+        </li>
+        <li><a href="#avantages">Avantages</a></li>
+        <li><a href="#prix">Prix</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="accueil">
+    <h2>Bienvenue chez Aura Capillaire</h2>
+    <p>Soins capillaires de luxe fondés par Youssef & Yaya.</p>
+</section>
+
+<section id="ingredients">
+    <h2>Nos Ingrédients Naturels</h2>
+    <ul>
+        <li id="argan">Huile d’argan bio</li>
+        <li id="keratine">Kératine végétale</li>
+        <li id="aloe">Aloe vera pur</li>
+        <li id="vitamine">Vitamine E</li>
+        <li id="karite">Beurre de karité</li>
+        <li id="camomille">Extrait de camomille</li>
+        <li id="proteines">Protéines de soie</li>
+    </ul>
+</section>
+
+<section id="avantages">
+    <h2>Avantages de notre produit</h2>
+    <ul>
+        <li>Hydratation intense</li>
+        <li>Réparation des cheveux abîmés</li>
+        <li>Brillance naturelle</li>
+        <li>Protection contre la chaleur</li>
+        <li>Convient à tous types de cheveux</li>
+    </ul>
+</section>
+
+<section id="prix">
+    <h2>Stratégie de prix</h2>
+    <p>Nous adoptons une stratégie premium avec un bon rapport qualité/prix.</p>
+    <p>Prix conseillé : 19,99€ pour 150ml</p>
+</section>
+
+<section id="communication">
+    <h2>Plan de communication</h2>
+    <ul>
+        <li>Réseaux sociaux : Instagram, TikTok, YouTube</li>
+        <li>Partenariats avec des influenceurs beauté</li>
+        <li>Affiches dans les salons de coiffure</li>
+        <li>Présentations dans les écoles et événements locaux</li>
+        <li>Création d’un site web professionnel</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:Youssef.Azzou@clfb.be">Youssef.Azzou@clfb.be</a></p>
+    <p>Téléphone : 04 99 60 37 47</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Aura Capillaire. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
