@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <title>Aura Capillaire</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #fdfdfd; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #fdfdfd; display: flex; flex-direction: column; min-height: 100vh; }
     header { background-color: #5b3a29; color: white; padding: 1em; text-align: center; }
     nav { background: #ddd; padding: 1em; text-align: center; }
     nav a { margin: 0 1em; text-decoration: none; color: #333; font-weight: bold; }
-    section { padding: 2em; display: none; }
+    section { padding: 2em; display: none; flex-grow: 1; }
     section.active { display: block; }
     h2 { color: #5b3a29; }
+    footer { background: #f0f0f0; text-align: center; padding: 1em; margin-top: auto; }
+    footer img { max-height: 80px; }
   </style>
   <script>
     function showSection(id) {
@@ -36,7 +38,7 @@
 
   <section id="presentation">
     <h2>Public Cible</h2>
-    <p>Aura Capillaire s'adresse aux femmes et hommes de 18 à 40 ans, soucieux de leurs cheveux et recherchant une solution naturelle et efficace.</p>
+    <p>Aura Capillaire s'adresse aux femmes et hommes de 18 à 40 ans...</p>
     <ul>
       <li>Jeunes actifs, étudiants, jeunes parents</li>
       <li>Cheveux secs, cassants ou abîmés</li>
@@ -47,26 +49,18 @@
   <section id="ingredients">
     <h2>Ingrédients</h2>
     <ul>
-      <li>Huile de ricin</li>
-      <li>Huile de coco</li>
-      <li>Huile d’argan</li>
-      <li>Kératine végétale</li>
-      <li>Aloe vera</li>
-      <li>Vitamine E</li>
-      <li>Romarin</li>
-      <li>Huile essentielle de lavande</li>
+      <li>Huile de ricin</li><li>Huile de coco</li><li>Huile d’argan</li>
+      <li>Kératine végétale</li><li>Aloe vera</li><li>Vitamine E</li>
+      <li>Romarin</li><li>Huile essentielle de lavande</li>
     </ul>
   </section>
 
   <section id="avantages">
     <h2>Avantages</h2>
     <ul>
-      <li>Nourrit et renforce les cheveux</li>
-      <li>Stimule la pousse</li>
-      <li>Répare les pointes abîmées</li>
-      <li>Apporte de la brillance</li>
-      <li>Lutte contre les pellicules</li>
-      <li>Convient à tous types de cheveux</li>
+      <li>Nourrit et renforce les cheveux</li><li>Stimule la pousse</li>
+      <li>Répare les pointes abîmées</li><li>Apporte de la brillance</li>
+      <li>Lutte contre les pellicules</li><li>Convient à tous types de cheveux</li>
       <li>Sans sulfate, sans silicone</li>
     </ul>
   </section>
@@ -74,23 +68,23 @@
   <section id="prix">
     <h2>Stratégie de Prix</h2>
     <ul>
-      <li>14,90€ pour 100ml</li>
-      <li>Pack duo : 26,90€</li>
-      <li>Pack familial : 37,90€</li>
+      <li>14,90€ pour 100ml</li><li>Pack duo : 26,90€</li><li>Pack familial : 37,90€</li>
     </ul>
   </section>
 
   <section id="communication">
     <h2>Plan de Communication</h2>
     <ul>
-      <li>Lancement sur Instagram & TikTok</li>
-      <li>Photos avant/après clients</li>
-      <li>Site vitrine avec e-commerce</li>
-      <li>Partenariats coiffeurs/salons</li>
-      <li>Programme fidélité</li>
-      <li>Flyers dans écoles & lieux bien-être</li>
+      <li>Lancement sur Instagram & TikTok</li><li>Photos avant/après clients</li>
+      <li>Site vitrine avec e-commerce</li><li>Partenariats coiffeurs/salons</li>
+      <li>Programme fidélité</li><li>Flyers dans écoles & lieux bien-être</li>
       <li>Présence dans boutiques bio/afro</li>
     </ul>
   </section>
+
+  <footer>
+    <p>© 2025 Aura Capillaire</p>
+    <img src="logo.png" alt="Logo Aura Capillaire">
+  </footer>
 </body>
 </html>
