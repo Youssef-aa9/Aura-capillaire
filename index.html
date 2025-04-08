@@ -1,90 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aura Capillaire</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #fdfdfd; display: flex; flex-direction: column; min-height: 100vh; }
-    header { background-color: #5b3a29; color: white; padding: 1em; text-align: center; }
-    nav { background: #ddd; padding: 1em; text-align: center; }
-    nav a { margin: 0 1em; text-decoration: none; color: #333; font-weight: bold; }
-    section { padding: 2em; display: none; flex-grow: 1; }
-    section.active { display: block; }
-    h2 { color: #5b3a29; }
-    footer { background: #f0f0f0; text-align: center; padding: 1em; margin-top: auto; }
-    footer img { max-height: 80px; }
-  </style>
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
     }
-    window.onload = () => showSection('presentation');
-  </script>
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      max-height: 100px;
+      margin-bottom: 10px;
+    }
+
+    .slogan {
+      font-style: italic;
+      margin-top: -10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background: #34495e;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
+    <img src="logo.jpeg" alt="Logo Aura Capillaire" class="logo"/>
     <h1>Aura Capillaire</h1>
-    <p><em>“Révèle la beauté naturelle de tes cheveux.”</em></p>
+    <p class="slogan">Révèle la beauté naturelle de tes cheveux</p>
+    <nav>
+      <ul>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#ingredients">Ingrédients</a></li>
+        <li><a href="#avantages">Avantages</a></li>
+        <li><a href="#strategie">Stratégie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#" onclick="showSection('presentation')">Présentation</a>
-    <a href="#" onclick="showSection('ingredients')">Ingrédients</a>
-    <a href="#" onclick="showSection('avantages')">Avantages</a>
-    <a href="#" onclick="showSection('prix')">Prix</a>
-    <a href="#" onclick="showSection('communication')">Communication</a>
-  </nav>
+  <main>
+    <section id="presentation">
+      <h2>Présentation du produit</h2>
+      <p>Aura Capillaire est un soin capillaire conçu pour révéler la beauté naturelle de vos cheveux. Il est adapté aux jeunes de 10 à 20 ans ainsi qu’aux personnes âgées, offrant un résultat visible dès les premières utilisations.</p>
+    </section>
 
-  <section id="presentation">
-    <h2>Public Cible</h2>
-    <p>Aura Capillaire s'adresse aux femmes et hommes de 18 à 40 ans...</p>
-    <ul>
-      <li>Jeunes actifs, étudiants, jeunes parents</li>
-      <li>Cheveux secs, cassants ou abîmés</li>
-      <li>Utilisateurs de produits bio et naturels</li>
-    </ul>
-  </section>
+    <section id="ingredients">
+      <h2>Ingrédients</h2>
+      <ul>
+        <li>Aloe vera</li>
+        <li>Huile d’argan</li>
+        <li>Beurre de karité</li>
+        <li>Protéines végétales</li>
+      </ul>
+    </section>
 
-  <section id="ingredients">
-    <h2>Ingrédients</h2>
-    <ul>
-      <li>Huile de ricin</li><li>Huile de coco</li><li>Huile d’argan</li>
-      <li>Kératine végétale</li><li>Aloe vera</li><li>Vitamine E</li>
-      <li>Romarin</li><li>Huile essentielle de lavande</li>
-    </ul>
-  </section>
+    <section id="avantages">
+      <h2>Avantages du produit</h2>
+      <ul>
+        <li>Renforce les racines</li>
+        <li>Hydrate et nourrit en profondeur</li>
+        <li>Répare les cheveux abîmés</li>
+        <li>Adapté à tous types de cheveux</li>
+      </ul>
+    </section>
 
-  <section id="avantages">
-    <h2>Avantages</h2>
-    <ul>
-      <li>Nourrit et renforce les cheveux</li><li>Stimule la pousse</li>
-      <li>Répare les pointes abîmées</li><li>Apporte de la brillance</li>
-      <li>Lutte contre les pellicules</li><li>Convient à tous types de cheveux</li>
-      <li>Sans sulfate, sans silicone</li>
-    </ul>
-  </section>
+    <section id="strategie">
+      <h2>Stratégie</h2>
+      <p><strong>Prix :</strong> Positionnement abordable (10€ à 15€).<br>
+      <strong>Communication :</strong> Réseaux sociaux, affiches, démonstrations en école.<br>
+      <strong>Objectif :</strong> Toucher les jeunes et les seniors avec une approche simple et naturelle.</p>
+    </section>
 
-  <section id="prix">
-    <h2>Stratégie de Prix</h2>
-    <ul>
-      <li>14,90€ pour 100ml</li><li>Pack duo : 26,90€</li><li>Pack familial : 37,90€</li>
-    </ul>
-  </section>
-
-  <section id="communication">
-    <h2>Plan de Communication</h2>
-    <ul>
-      <li>Lancement sur Instagram & TikTok</li><li>Photos avant/après clients</li>
-      <li>Site vitrine avec e-commerce</li><li>Partenariats coiffeurs/salons</li>
-      <li>Programme fidélité</li><li>Flyers dans écoles & lieux bien-être</li>
-      <li>Présence dans boutiques bio/afro</li>
-    </ul>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Téléphone : 04 99 60 37 47</p>
+      <p>Email : Youssef.Azzou@clfb.be</p>
+      <p>Établissement : Collège la Fraternité</p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Aura Capillaire</p>
-    <img src="logo.png" alt="Logo Aura Capillaire">
+    <p>&copy; 2025 Aura Capillaire - Créé par Youssef</p>
   </footer>
 </body>
 </html>
