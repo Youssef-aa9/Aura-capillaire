@@ -1,75 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Aura Capillaire</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      color: #333;
-    }
-    header {
-      background: #ca9ce1;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      background: #eee;
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-    section {
-      padding: 2rem;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #fdfdfd; }
+    header { background-color: #5b3a29; color: white; padding: 1em; text-align: center; }
+    nav { background: #ddd; padding: 1em; text-align: center; }
+    nav a { margin: 0 1em; text-decoration: none; color: #333; font-weight: bold; }
+    section { padding: 2em; display: none; }
+    section.active { display: block; }
+    h2 { color: #5b3a29; }
   </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    window.onload = () => showSection('presentation');
+  </script>
 </head>
 <body>
   <header>
     <h1>Aura Capillaire</h1>
-    <p>Révélez la beauté naturelle de vos cheveux</p>
+    <p><em>“Révèle la beauté naturelle de tes cheveux.”</em></p>
   </header>
 
   <nav>
-    <a href="#ingredients">Ingrédients</a>
-    <a href="#avantages">Avantages</a>
-    <a href="#contact">Contact</a>
+    <a href="#" onclick="showSection('presentation')">Présentation</a>
+    <a href="#" onclick="showSection('ingredients')">Ingrédients</a>
+    <a href="#" onclick="showSection('avantages')">Avantages</a>
+    <a href="#" onclick="showSection('prix')">Prix</a>
+    <a href="#" onclick="showSection('communication')">Communication</a>
   </nav>
+
+  <section id="presentation">
+    <h2>Public Cible</h2>
+    <p>Aura Capillaire s'adresse aux femmes et hommes de 18 à 40 ans, soucieux de leurs cheveux et recherchant une solution naturelle et efficace.</p>
+    <ul>
+      <li>Jeunes actifs, étudiants, jeunes parents</li>
+      <li>Cheveux secs, cassants ou abîmés</li>
+      <li>Utilisateurs de produits bio et naturels</li>
+    </ul>
+  </section>
 
   <section id="ingredients">
     <h2>Ingrédients</h2>
-    <p>Huile d'argan, Aloe vera, Beurre de karité, Vitamine E...</p>
+    <ul>
+      <li>Huile de ricin</li>
+      <li>Huile de coco</li>
+      <li>Huile d’argan</li>
+      <li>Kératine végétale</li>
+      <li>Aloe vera</li>
+      <li>Vitamine E</li>
+      <li>Romarin</li>
+      <li>Huile essentielle de lavande</li>
+    </ul>
   </section>
 
   <section id="avantages">
     <h2>Avantages</h2>
     <ul>
-      <li>Hydratation intense</li>
-      <li>Favorise la croissance</li>
-      <li>Brillance naturelle</li>
+      <li>Nourrit et renforce les cheveux</li>
+      <li>Stimule la pousse</li>
+      <li>Répare les pointes abîmées</li>
+      <li>Apporte de la brillance</li>
+      <li>Lutte contre les pellicules</li>
+      <li>Convient à tous types de cheveux</li>
+      <li>Sans sulfate, sans silicone</li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : Youssef.Azzou@clfb.be</p>
+  <section id="prix">
+    <h2>Stratégie de Prix</h2>
+    <ul>
+      <li>14,90€ pour 100ml</li>
+      <li>Pack duo : 26,90€</li>
+      <li>Pack familial : 37,90€</li>
+    </ul>
   </section>
 
-  <footer>
-    &copy; 2025 Aura Capillaire. Tous droits réservés.
-  </footer>
+  <section id="communication">
+    <h2>Plan de Communication</h2>
+    <ul>
+      <li>Lancement sur Instagram & TikTok</li>
+      <li>Photos avant/après clients</li>
+      <li>Site vitrine avec e-commerce</li>
+      <li>Partenariats coiffeurs/salons</li>
+      <li>Programme fidélité</li>
+      <li>Flyers dans écoles & lieux bien-être</li>
+      <li>Présence dans boutiques bio/afro</li>
+    </ul>
+  </section>
 </body>
 </html>
